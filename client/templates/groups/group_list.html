@@ -1,0 +1,11 @@
+<template name="groupList">
+    {{#unless currentUser}}
+        What's your Kerberos?
+        <form>
+            <input type="text" id="kerb" name="kerb">
+            <input type="submit" value="Go">
+        </form>
+    {{else}}
+        Fuck yeahhh
+    {{/unless}}
+</template>

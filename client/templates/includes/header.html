@@ -1,0 +1,18 @@
+<template name="header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{pathFor 'home'}}">
+                Pset Party
+            </a>
+        </div>
+        {{#if currentUser}}
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="logout">{{username}} | logout</a>
+                    </li>
+                </ul>
+            </div>
+        {{/if}}
+    </nav>
+</template>
