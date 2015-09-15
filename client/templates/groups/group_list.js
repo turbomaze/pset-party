@@ -3,7 +3,7 @@ Template.groupList.helpers({
 });
 
 Template.groupList.events({
-    'submit form': function (e, tmpl) {
+    'submit .login-form': function (e, tmpl) {
         e.preventDefault();
 
         var kerb = e.target.kerb.value;
