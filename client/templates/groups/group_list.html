@@ -1,11 +1,16 @@
 <template name="groupList">
     {{#unless currentUser}}
         What's your Kerberos?
-        <form>
+        <form class="login-form">
             <input type="text" id="kerb" name="kerb">
             <input type="submit" value="Go">
         </form>
     {{else}}
-        Fuck yeahhh
+        <a href="/new">New group</a>
+        <div class="groups">
+            {{#each groups}}
+                {{#linkTo route='groupPage'}}{{> group}}{{/linkTo}}
+            {{/each}}
+        </div>
     {{/unless}}
 </template>

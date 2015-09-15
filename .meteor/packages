@@ -5,9 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 iron:router
 twbs:bootstrap
 sacha:spin
 accounts-password
 turbomaze:errors
+audit-argument-checks
